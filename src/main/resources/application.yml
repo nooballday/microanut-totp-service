@@ -1,3 +1,11 @@
 micronaut:
   application:
     name: totp-service
+  server:
+    port: 8081
+    cors:
+      enabled: true
+      configurations:
+        ui:
+          allowed-origins:
+            - http://localhost:8080
